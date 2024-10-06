@@ -1,6 +1,8 @@
 import "./App.css";
-import Profile from "./Profile/Profile.jsx";
 import userData from "../data/userData.json";
+import friends from "../data/friends.json";
+import Profile from "./Profile/Profile.jsx";
+import FriendList from "./FriendList/FriendList.jsx";
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
         stats={userData.stats}
         containerStyle={{ margin: "0 auto" }}
       />
+      <br />
+      <FriendList friends={friends} listStyle={{ margin: "0 auto" }} />
     </>
   );
 }

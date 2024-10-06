@@ -10,10 +10,10 @@ export default function Profile({
 }) {
   const { followers, views, likes } = stats;
   return (
-    <div className={css.container} style={containerStyle}>
+    <div className={css.card} style={containerStyle}>
       <div className={css.thumb}>
         <img className={css.image} src={image} alt="User avatar" />
-        <p className={css.name}>{name}</p>
+        <p className={css.title}>{name}</p>
         <p className={css.description}>@{tag}</p>
         <p className={css.description}>{location}</p>
       </div>
