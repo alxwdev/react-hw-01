@@ -6,11 +6,11 @@ export default function Profile({
   location,
   image = "https://cdn-icons-png.flaticon.com/512/1077/1077012.png",
   stats,
-  style,
+  containerStyle,
 }) {
   const { followers, views, likes } = stats;
   return (
-    <div className={css.container} style={style}>
+    <div className={css.container} style={containerStyle}>
       <div className={css.thumb}>
         <img className={css.image} src={image} alt="User avatar" />
         <p className={css.name}>{name}</p>

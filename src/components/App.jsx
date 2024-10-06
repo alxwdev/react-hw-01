@@ -11,7 +11,7 @@ function App() {
         location={userData.location}
         image={userData.avatar}
         stats={userData.stats}
-        style={{ margin: "0 auto" }}
+        containerStyle={{ margin: "0 auto" }}
       />
     </>
   );
