@@ -1,8 +1,15 @@
+// Styles
 import "./App.css";
+
+// Data
 import userData from "../data/userData.json";
 import friends from "../data/friends.json";
+import transactions from "../data/transactions.json";
+
+// Components
 import Profile from "./Profile/Profile.jsx";
 import FriendList from "./FriendList/FriendList.jsx";
+import TransactionHistory from "./TransactionHistory/TransactionHistory.jsx";
 
 function App() {
   return (
@@ -17,6 +24,8 @@ function App() {
       />
       <br />
       <FriendList friends={friends} listStyle={{ margin: "0 auto" }} />
+      <br />
+      <TransactionHistory transactions={transactions} />
     </>
   );
 }
